@@ -1,0 +1,110 @@
+@media (max-width: 992px) {
+    .promo {
+        .header {
+            margin: 0 30px;
+        }
+        &__wrapper {
+            margin-right: 25px;
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    .header__phone {
+        font-size: 17px;
+    }
+    .header__official {
+        margin: 0 10px;
+    }
+    .consultation {
+        padding: 100px 35px;
+        h2 {
+            font-size: 29px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+    .promo {
+        .header {
+            flex-wrap: wrap;
+            &__logo {
+                margin-bottom: 25px;
+            }
+            &__official {
+                margin-right: 25px;
+            }
+        }
+        &__wrapper {
+            margin-right: 0;
+            text-align: center;
+        }
+        &__icon {
+            margin-left: 0;
+        }
+        &__icons {
+            justify-content: space-around;
+        }
+    }
+    .consultation {
+        h2.title {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        form {
+            margin: 36px auto;
+            margin-bottom: 0;
+        }
+    } 
+}
+@media (max-width: 320px) {
+    .promo {
+        &__header {
+            font-size: 35px;
+        }
+        .header {
+            font-size: 35px;
+            &__official {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            &__contacts {
+                align-items: center;
+            }
+        }
+        &__subheader {
+            font-size: 19px;
+            text-align: center;
+        }
+        &__wrapper {
+            .button {
+                width: 80%;
+                font-size: 100%;
+            }
+        }
+    }
+    .consultation {
+        h2 {
+            text-align: center;
+            font-size: 17px;
+            line-height: 35px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        form {
+            width: 100%;
+        }
+        button {
+            font-size: 15px;
+        }
+    }
+}
