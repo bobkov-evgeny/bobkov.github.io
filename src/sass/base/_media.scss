@@ -10,6 +10,22 @@
 
 }
 @media (max-width: 768px) {
+    .carousel {
+        &__inner {
+            width: 90%;
+            img {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    [data-action="stop"], [data-controls="next"], [data-controls="prev"], [data-controls="start"] {
+        display: none !important;
+    }
+    .tns-nav {
+        display: block !important;
+    }
     .header__phone {
         font-size: 17px;
     }
@@ -36,7 +52,7 @@
                 margin-bottom: 25px;
             }
             &__official {
-                margin-right: 25px;
+                margin: 0 25px;
             }
         }
         &__wrapper {
@@ -62,6 +78,34 @@
             margin-bottom: 0;
         }
     } 
+    
+}
+@media (max-width: 425px) {
+    .promo {
+        .header {
+            font-size: 35px;
+            justify-content: center;
+            &__official {
+                margin-bottom: 20px;
+            }
+        }
+        &__subheader {
+            font-size: 19px;
+            text-align: center;
+        }
+    }
+    .catalog {
+        h2 {
+            font-size: 27px;
+        }
+        &__tabs {
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        &__tab {
+            margin-bottom: 10px;
+        }
+    }
 }
 @media (max-width: 320px) {
     .promo {
@@ -71,17 +115,14 @@
         .header {
             font-size: 35px;
             &__official {
-                margin-right: 0;
+                
                 margin-bottom: 20px;
             }
             &__contacts {
                 align-items: center;
             }
         }
-        &__subheader {
-            font-size: 19px;
-            text-align: center;
-        }
+
         &__wrapper {
             .button {
                 width: 80%;
@@ -106,5 +147,8 @@
         button {
             font-size: 15px;
         }
+    }
+    .tns_nav {
+        width: 30px;
     }
 }
