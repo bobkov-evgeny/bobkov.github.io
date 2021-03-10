@@ -38,6 +38,14 @@
             font-size: 29px;
         }
     }
+    .reviews {
+        &__block {
+            padding: 0 45px;
+        }
+        &__descr {
+            margin-left: 25px;
+        }
+    }
 }
 @media (max-width: 576px) {
     .advantages {
@@ -77,7 +85,18 @@
             margin: 36px auto;
             margin-bottom: 0;
         }
-    } 
+    }
+    .reviews {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        }
+    }
     
 }
 @media (max-width: 425px) {
@@ -105,6 +124,29 @@
         &__tab {
             margin-bottom: 10px;
         }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+        }
+    }
+    .modal {
+        padding: 20px;
+        width: 80%;
+        min-height: 50%;
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    }
+    .feed-form {
+        width: 100%;
+    }
+    .button_submit {
+        font-size: 14px;
     }
 }
 @media (max-width: 320px) {
